@@ -1,4 +1,6 @@
 # -- NodeJS -------------------------------------------------------------------
+
+# Chrome Tab Rotate Server
 module "chrome_tab_rotate_server" {
   source  = "mineiros-io/repository/github"
   version = "0.16.0"
@@ -22,4 +24,20 @@ module "chrome_tab_rotate_server" {
   ]
 }
 
-# -- Terraform modules --------------------------------------------------------
+# -- Terraform ----------------------------------------------------------------
+
+# HomeLab
+module "homelab" {
+  source  = "mineiros-io/repository/github"
+  version = "0.16.0"
+
+  name               = "homelab"
+  description        = "Experimentation of running an HomeLab server running Proxmox + K8S cluster on VMs"
+  default_branch     = "develop"
+  gitignore_template = "Terraform"
+  defaults           = var.defaults
+  topics = [
+    "terraform",
+    "proxmox"
+  ]
+}
