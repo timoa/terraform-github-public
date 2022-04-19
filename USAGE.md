@@ -10,7 +10,12 @@
 
 | Name | Source | Version |
 |------|--------|---------|
+| <a name="module_app_stores_prometheus_exporter"></a> [app\_stores\_prometheus\_exporter](#module\_app\_stores\_prometheus\_exporter) | mineiros-io/repository/github | 0.16.0 |
+| <a name="module_terraform_module_example"></a> [terraform\_module\_example](#module\_terraform\_module\_example) | mineiros-io/repository/github | 0.16.0 |
+| <a name="module_terraform_module_aws_example"></a> [terraform\_module\_aws\_example](#module\_terraform\_module\_aws\_example) | mineiros-io/repository/github | 0.16.0 |
 | <a name="module_chrome_tab_rotate_server"></a> [chrome\_tab\_rotate\_server](#module\_chrome\_tab\_rotate\_server) | mineiros-io/repository/github | 0.16.0 |
+| <a name="module_homelab"></a> [homelab](#module\_homelab) | mineiros-io/repository/github | 0.16.0 |
+| <a name="module_terraform_module_gcp_example"></a> [terraform\_module\_gcp\_example](#module\_terraform\_module\_gcp\_example) | mineiros-io/repository/github | 0.16.0 |
 
 ## Resources
 
@@ -22,7 +27,7 @@ No resources.
 |------|-------------|------|---------|:--------:|
 | <a name="input_github_token"></a> [github\_token](#input\_github\_token) | GitHub Token. Can be set with TF\_VAR\_github\_token | `string` | n/a | yes |
 | <a name="input_branches"></a> [branches](#input\_branches) | (Optional) A list of branches to be created in this repository. | `any` | `[]` | no |
-| <a name="input_defaults"></a> [defaults](#input\_defaults) | (Optional) Overwrite defaults for various repository settings | `any` | <pre>{<br>  "allow_auto_merge": false,<br>  "allow_merge_commit": true,<br>  "allow_rebase_merge": true,<br>  "allow_squash_merge": true,<br>  "auto_init": true,<br>  "default_branch": "main",<br>  "delete_branch_on_merge": true,<br>  "gitignore_template": "terraform",<br>  "has_downloads": false,<br>  "has_issues": true,<br>  "has_projects": false,<br>  "has_wiki": false,<br>  "homepage_url": "https://timoa.com/",<br>  "license_template": "mit",<br>  "topics": [<br>    "terraform"<br>  ],<br>  "visibility": "public"<br>}</pre> | no |
+| <a name="input_defaults"></a> [defaults](#input\_defaults) | (Optional) Overwrite defaults for various repository settings | `any` | <pre>{<br>  "allow_auto_merge": false,<br>  "allow_merge_commit": true,<br>  "allow_rebase_merge": true,<br>  "allow_squash_merge": true,<br>  "auto_init": true,<br>  "default_branch": "main",<br>  "delete_branch_on_merge": true,<br>  "gitignore_template": "terraform",<br>  "has_downloads": false,<br>  "has_issues": true,<br>  "has_projects": false,<br>  "has_wiki": false,<br>  "homepage_url": "https://timoa.com",<br>  "license_template": "mit",<br>  "topics": [<br>    "terraform"<br>  ],<br>  "visibility": "public"<br>}</pre> | no |
 | <a name="input_pages"></a> [pages](#input\_pages) | (Optional) The repository's GitHub Pages configuration. (Default: {}) | `any` | `null` | no |
 | <a name="input_is_template"></a> [is\_template](#input\_is\_template) | (Optional) Whether or not to tell GitHub that this is a template repository. ( Default: false) | `bool` | `false` | no |
 | <a name="input_archived"></a> [archived](#input\_archived) | (Optional) Specifies if the repository should be archived. (Default: false) | `bool` | `false` | no |
@@ -55,7 +60,7 @@ No resources.
 | <a name="input_plaintext_secrets"></a> [plaintext\_secrets](#input\_plaintext\_secrets) | (Optional) Configuring actions secrets. For details please check: https://www.terraform.io/docs/providers/github/r/actions_secret | `map(string)` | `{}` | no |
 | <a name="input_encrypted_secrets"></a> [encrypted\_secrets](#input\_encrypted\_secrets) | (Optional) Configuring encrypted actions secrets. For details please check: https://www.terraform.io/docs/providers/github/r/actions_secret | `map(string)` | `{}` | no |
 | <a name="input_autolink_references"></a> [autolink\_references](#input\_autolink\_references) | (Optional) Configuring autolink references. For details please check: https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository_autolink_reference | <pre>list(object({<br>    key_prefix          = string<br>    target_url_template = string<br>  }))</pre> | `[]` | no |
-| <a name="input_vulnerability_alerts"></a> [vulnerability\_alerts](#input\_vulnerability\_alerts) | (Optional) Set to `false` to disable security alerts for vulnerable dependencies. Enabling requires alerts to be enabled on the owner level. | `bool` | `null` | no |
+| <a name="input_vulnerability_alerts"></a> [vulnerability\_alerts](#input\_vulnerability\_alerts) | (Optional) Set to `false` to disable security alerts for vulnerable dependencies. Enabling requires alerts to be enabled on the owner level. | `bool` | `true` | no |
 | <a name="input_archive_on_destroy"></a> [archive\_on\_destroy](#input\_archive\_on\_destroy) | (Optional) Set to `false` to not archive the repository instead of deleting on destroy. | `string` | `true` | no |
 | <a name="input_module_depends_on"></a> [module\_depends\_on](#input\_module\_depends\_on) | (Optional) Define resources this module indirectly depends\_on. | `any` | `[]` | no |
 
