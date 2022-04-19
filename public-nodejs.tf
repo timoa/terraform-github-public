@@ -43,3 +43,25 @@ module "chrome_tab_rotate_server" {
     "chrome-tab"
   ]
 }
+
+# nodejs-encryption-api-example
+module "nodejs_encryption_api_example" {
+  source  = "mineiros-io/repository/github"
+  version = "0.16.0"
+
+  name                 = "nodejs-encryption-api-example"
+  description          = "Example of encrypting/decrypting data thru an API using node.js"
+  default_branch       = "develop"
+  gitignore_template   = "NodeJS"
+  defaults             = var.defaults
+  vulnerability_alerts = true
+  topics = [
+    "nodejs",
+    "api",
+    "docker",
+    "cryptography",
+    "swagger",
+    "postman",
+    "fastify"
+  ]
+}
