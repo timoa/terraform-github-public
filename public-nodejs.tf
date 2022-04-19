@@ -15,7 +15,8 @@ module "app_stores_prometheus_exporter" {
     "prometheus",
     "prometheus-exporter",
     "google-play-store",
-    "itunes-store"
+    "itunes-store",
+    "managed-by-terraform"
   ]
 }
 
@@ -40,11 +41,12 @@ module "chrome_tab_rotate_server" {
     "chrome-browser",
     "configuration",
     "digital-signage",
-    "chrome-tab"
+    "chrome-tab",
+    "managed-by-terraform"
   ]
 }
 
-# nodejs-encryption-api-example
+# NodeJS Encryption API Example
 module "nodejs_encryption_api_example" {
   source  = "mineiros-io/repository/github"
   version = "0.16.0"
@@ -62,6 +64,7 @@ module "nodejs_encryption_api_example" {
     "cryptography",
     "swagger",
     "postman",
-    "fastify"
+    "fastify",
+    "managed-by-terraform"
   ]
 }

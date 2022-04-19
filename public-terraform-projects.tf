@@ -7,11 +7,13 @@ module "homelab" {
   description          = "Experimentation of running an HomeLab server running Proxmox + K8S cluster on VMs"
   default_branch       = "develop"
   gitignore_template   = "Terraform"
+  license_template     = "apache-2.0"
   defaults             = var.defaults
   vulnerability_alerts = true
   topics = [
     "terraform",
-    "proxmox"
+    "proxmox",
+    "managed-by-terraform"
   ]
 }
 
@@ -25,6 +27,7 @@ module "terraform_elasticsearch_single_node" {
   description          = "Example of the creation of an AWS Elasticsearch single node with Terraform"
   default_branch       = "master"
   gitignore_template   = "Terraform"
+  license_template     = "apache-2.0"
   defaults             = var.defaults
   vulnerability_alerts = true
   topics = [
@@ -32,7 +35,8 @@ module "terraform_elasticsearch_single_node" {
     "aws-elasticsearch",
     "terraform",
     "elasticsearch",
-    "single-node"
+    "single-node",
+    "managed-by-terraform"
   ]
 }
 
@@ -46,6 +50,7 @@ module "terraform_jenkins_slaves_on_demand" {
   description          = "Configuration of a Jenkins master with slaves on-demand (AWS EC2 version)"
   default_branch       = "master"
   gitignore_template   = "Terraform"
+  license_template     = "apache-2.0"
   defaults             = var.defaults
   vulnerability_alerts = true
   topics = [
@@ -53,6 +58,7 @@ module "terraform_jenkins_slaves_on_demand" {
     "jenkins",
     "terraform",
     "jenkins-slaves",
-    "jenkins-master"
+    "jenkins-master",
+    "managed-by-terraform"
   ]
 }

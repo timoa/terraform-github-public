@@ -19,7 +19,8 @@ module "cdkit_appstore_design" {
     "google-play-store",
     "google-play-screenshots",
     "itunes-store",
-    "screenshots"
+    "screenshots",
+    "managed-by-terraform"
   ]
 }
 
@@ -43,7 +44,8 @@ module "cdkit_ui_automation" {
     "axway",
     "ui-testing",
     "genymotion",
-    "appium-server"
+    "appium-server",
+    "managed-by-terraform"
   ]
 }
 
@@ -65,6 +67,7 @@ module "cdkit_ansible" {
     "ansible",
     "gocd",
     "gocd-server",
-    "gocd-agent"
+    "gocd-agent",
+    "managed-by-terraform"
   ]
 }

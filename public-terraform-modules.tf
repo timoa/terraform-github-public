@@ -7,13 +7,15 @@ module "terraform_module_example" {
   description          = "Terraform module use as an example to start new module. It includes all the automation (versioning, providers update, lint, security) and best practices from HashiCorp"
   default_branch       = "main"
   gitignore_template   = "Terraform"
+  license_template     = "apache-2.0"
   defaults             = var.defaults
   vulnerability_alerts = true
   topics = [
     "terraform",
     "semantic-release",
     "renovate",
-    "terraform-module"
+    "terraform-module",
+    "managed-by-terraform"
   ]
 }
 
@@ -26,6 +28,7 @@ module "terraform_module_aws_example" {
   description          = "A Terraform module uses as an example to start new AWS Terraform module. It includes all the automation (versioning, providers update, lint, security) and best practices from HashiCorp"
   default_branch       = "main"
   gitignore_template   = "Terraform"
+  license_template     = "apache-2.0"
   defaults             = var.defaults
   vulnerability_alerts = true
   topics = [
@@ -33,7 +36,8 @@ module "terraform_module_aws_example" {
     "semantic-release",
     "renovate",
     "terraform-module",
-    "aws"
+    "aws",
+    "managed-by-terraform"
   ]
 }
 
@@ -46,6 +50,7 @@ module "terraform_module_gcp_example" {
   description          = "A Terraform module uses as an example to start new Google Cloud Platform Terraform module. It includes all the automation (versioning, providers update, lint, security) and best practices from HashiCorp"
   default_branch       = "main"
   gitignore_template   = "Terraform"
+  license_template     = "apache-2.0"
   defaults             = var.defaults
   vulnerability_alerts = true
   topics = [
@@ -54,6 +59,7 @@ module "terraform_module_gcp_example" {
     "renovate",
     "terraform-module",
     "google-cloud-platform",
-    "gcp"
+    "gcp",
+    "managed-by-terraform"
   ]
 }
