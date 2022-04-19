@@ -1,8 +1,3 @@
-variable "github_token" {
-  type        = string
-  description = "GitHub Token. Can be set with TF_VAR_github_token"
-}
-
 variable "branches" {
   description = "(Optional) A list of branches to be created in this repository."
   type        = any
