@@ -59,7 +59,7 @@ jobs:
   # -- DOCUMENTATION ----------------------------------------------------------
   documentation:
     runs-on: ubuntu-latest
-    needs: tests
+    needs: code-security
 
     steps:
       - name: Checkout
@@ -77,9 +77,7 @@ jobs:
   # -- RELEASE ----------------------------------------------------------------
   release:
     runs-on: ubuntu-latest
-    needs:
-      - code-security
-      - documentation
+    needs: documentation
     if: github.ref == 'refs/heads/main'
 
     steps:
