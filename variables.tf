@@ -6,19 +6,14 @@ variable "github_token" {
 variable "branches" {
   description = "(Optional) A list of branches to be created in this repository."
   type        = any
-  # type = list(object({
-  #   name          = string
-  #   source_branch = optional(string)
-  #   source_sha    = optional(string)
-  # }))
-  default = []
+  default     = []
 }
 
 variable "defaults" {
   description = "(Optional) Overwrite defaults for various repository settings"
   type        = any
   default = {
-    homepage_url           = "https://timoa.com/"
+    homepage_url           = "https://timoa.com"
     visibility             = "public"
     has_issues             = true
     has_projects           = false
@@ -39,13 +34,8 @@ variable "defaults" {
 
 variable "pages" {
   description = "(Optional) The repository's GitHub Pages configuration. (Default: {})"
-  # type = object({
-  # branch = string
-  # path   = string
-  # cname  = string
-  # })
-  type    = any
-  default = null
+  type        = any
+  default     = null
 }
 
 variable "is_template" {
@@ -173,60 +163,7 @@ variable "branch_protections" {
 
 variable "branch_protections_v3" {
   description = "(Optional) A list of branch protections to apply to the repository. Default is [] unless branch_protections is set."
-  type        = any
-
-  # We can't use a detailed type specification due to a terraform limitation. However, this might be changed in a future
-  # Terraform version. See https://github.com/hashicorp/terraform/issues/19898 and https://github.com/hashicorp/terraform/issues/22449
-  #
-  # type = list(object({
-  #   branch                 = string
-  #   enforce_admins         = bool
-  #   require_signed_commits = bool
-  #   required_status_checks = object({
-  #     strict   = bool
-  #     contexts = list(string)
-  #   })
-  #   required_pull_request_reviews = object({
-  #     dismiss_stale_reviews           = bool
-  #     dismissal_users                 = list(string)
-  #     dismissal_teams                 = list(string)
-  #     require_code_owner_reviews      = bool
-  #     required_approving_review_count = number
-  #   })
-  #   restrictions = object({
-  #     users = list(string)
-  #     teams = list(string)
-  #   })
-  # }))
-
-  default = null
-
-  # Example:
-  # branch_protections = [
-  #   {
-  #     branch                 = "main"
-  #     enforce_admins         = true
-  #     require_signed_commits = true
-  #
-  #     required_status_checks = {
-  #       strict   = false
-  #       contexts = ["ci/travis"]
-  #     }
-  #
-  #     required_pull_request_reviews = {
-  #       dismiss_stale_reviews           = true
-  #       dismissal_users                 = ["user1", "user2"]
-  #       dismissal_teams                 = ["team-slug-1", "team-slug-2"]
-  #       require_code_owner_reviews      = true
-  #       required_approving_review_count = 1
-  #     }
-  #
-  #     restrictions = {
-  #       users = ["user1"]
-  #       teams = ["team-slug-1"]
-  #     }
-  #   }
-  # ]
+  default     = null
 }
 
 variable "issue_labels_merge_with_github_labels" {
@@ -248,59 +185,19 @@ variable "issue_labels" {
     description = string
     color       = string
   }))
-
-  # Example:
-  # issue_labels = [
-  #   {
-  #     name        = "WIP"
-  #     description = "Work in Progress..."
-  #     color       = "d6c860"
-  #   },
-  #   {
-  #     name        = "another-label"
-  #     description = "This is a lable created by Terraform..."
-  #     color       = "1dc34f"
-  #   }
-  # ]
-
   default = []
 }
 
 variable "deploy_keys" {
   description = "(Optional) Configure a deploy key ( SSH key ) that grants access to a single GitHub repository. This key is attached directly to the repository instead of to a personal user account."
   type        = any
-
-  # Example:
-  # deploy_keys = [
-  #   {
-  #     title     = "CI User Deploy Key"
-  #     key       = "ssh-rsa AAAAB3NzaC1yc2...."
-  #     read_only = true
-  #   },
-  #   {
-  #     title     = "Test Key"
-  #     key       = "ssh-rsa AAAAB3NzaC1yc2...."
-  #     read_only = false
-  #   }
-  # ]
-
-  default = []
+  default     = []
 }
 
 variable "deploy_keys_computed" {
   description = "(Optional) Configure a deploy key ( SSH key ) that grants access to a single GitHub repository. This key is attached directly to the repository instead of to a personal user account."
   type        = any
-
-  # Example:
-  # deploy_keys_computed = [
-  #   {
-  #     title     = "CI User Deploy Key"
-  #     key       = computed.resource
-  #     read_only = true
-  #   }
-  # ]
-
-  default = []
+  default     = []
 }
 
 variable "projects" {
@@ -309,45 +206,13 @@ variable "projects" {
     name = string
     body = string
   }))
-
-  # Example:
-  # projects = [
-  #   {
-  #     name = "Testproject"
-  #     body = "This is a fancy test project for testing"
-  #   }
-  # ]
-
   default = []
 }
 
 variable "webhooks" {
   description = "(Optional) Configuring webhooks. For details please check: https://www.terraform.io/docs/providers/github/r/repository_webhook.html"
   type        = any
-
-  # We can't use a detailed type specification due to a terraform limitation. However, this might be changed in a future
-  # Terraform version. See https://github.com/hashicorp/terraform/issues/19898 and https://github.com/hashicorp/terraform/issues/22449
-  #
-  # type = list(object({
-  #   name         = string
-  #   active       = bool
-  #   events       = list(string)
-  #   url          = string
-  #   content_type = string
-  #   insecure_ssl = bool
-  #   secret       = string
-  # }))
-
-  default = []
-
-  # Example:
-  # webhooks = [{
-  #   active = false
-  #   events = ["issues"]
-  #   url          = "https://google.de/"
-  #   content_type = "form"
-  #   insecure_ssl = false
-  # }]
+  default     = []
 }
 
 variable "plaintext_secrets" {
@@ -369,22 +234,13 @@ variable "autolink_references" {
     key_prefix          = string
     target_url_template = string
   }))
-
-  # Example:
-  # autolink_references = [
-  #   {
-  #     key_prefix          = "TICKET-"
-  #     target_url_template = "https://hello.there/TICKET?query=<num>"
-  #   }
-  # ]
-
   default = []
 }
 
 variable "vulnerability_alerts" {
   type        = bool
   description = "(Optional) Set to `false` to disable security alerts for vulnerable dependencies. Enabling requires alerts to be enabled on the owner level."
-  default     = null
+  default     = true
 }
 
 variable "archive_on_destroy" {
