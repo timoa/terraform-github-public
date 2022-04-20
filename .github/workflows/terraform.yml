@@ -92,7 +92,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@dcd71f646680f2efd8db4afa5ad64fdcba30e748 # tag=v3
         with:
-          ref: 'main'
+          ref: 'main' # Force checkout of main branch to avoid caching from previous jobs
           persist-credentials: false
 
       - name: Semantic Release
