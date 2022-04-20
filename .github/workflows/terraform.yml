@@ -76,6 +76,7 @@ jobs:
           output-method: inject
           git-push: "true"
           git-commit-message: "chore(docs): update Terraform docs"
+        env:
           GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_TOKEN }} # use a different GITHUB_TOKEN to run commit on protected branches
 
   # -- RELEASE ----------------------------------------------------------------
