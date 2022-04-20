@@ -19,9 +19,9 @@
 | <a name="module_terraform_module_aws_example"></a> [terraform\_module\_aws\_example](#module\_terraform\_module\_aws\_example) | mineiros-io/repository/github | 0.16.0 |
 | <a name="module_chrome_tab_rotate_server"></a> [chrome\_tab\_rotate\_server](#module\_chrome\_tab\_rotate\_server) | mineiros-io/repository/github | 0.16.0 |
 | <a name="module_nodejs_encryption_api_example"></a> [nodejs\_encryption\_api\_example](#module\_nodejs\_encryption\_api\_example) | mineiros-io/repository/github | 0.16.0 |
-| <a name="module_homelab"></a> [homelab](#module\_homelab) | mineiros-io/repository/github | 0.16.0 |
 | <a name="module_terraform_elasticsearch_single_node"></a> [terraform\_elasticsearch\_single\_node](#module\_terraform\_elasticsearch\_single\_node) | mineiros-io/repository/github | 0.16.0 |
 | <a name="module_terraform_module_gcp_example"></a> [terraform\_module\_gcp\_example](#module\_terraform\_module\_gcp\_example) | mineiros-io/repository/github | 0.16.0 |
+| <a name="module_homelab"></a> [homelab](#module\_homelab) | mineiros-io/repository/github | 0.16.0 |
 | <a name="module_terraform_jenkins_slaves_on_demand"></a> [terraform\_jenkins\_slaves\_on\_demand](#module\_terraform\_jenkins\_slaves\_on\_demand) | mineiros-io/repository/github | 0.16.0 |
 
 ## Resources
