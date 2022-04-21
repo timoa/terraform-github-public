@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.DCTL_GITHUB_TOKEN }}
-      DCTL_FROM: tfstate+tfcloud://${{ secrets.TF_API_ORG }}/${{ secrets.TF_API_WORKSPACE_ID }}
+      DCTL_FROM: tfstate+tfcloud://${{ secrets.TF_API_WORKSPACE_ID }}
       DCTL_TO: github+tf
 
     steps:
