@@ -1,3 +1,10 @@
+## [0.3.4](https://github.com/timoa/terraform-github-public/compare/v0.3.3...v0.3.4) (2022-04-21)
+
+
+### Bug Fixes
+
+* **cicd:** use ENV vars instead of args for Driftctl ([9cc2b16](https://github.com/timoa/terraform-github-public/commit/9cc2b16defcee96098bd4ef77ebd6a45319c9cf9))
+
 ## [0.3.3](https://github.com/timoa/terraform-github-public/compare/v0.3.2...v0.3.3) (2022-04-21)
 
 
