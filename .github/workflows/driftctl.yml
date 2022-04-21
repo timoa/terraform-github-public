@@ -1,0 +1,20 @@
+name: driftctl
+
+on:
+  # Triggers driftctl every 10 minutes
+  schedule:
+    - cron: "*/10 * * * *"
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.DCTL_GITHUB_TOKEN }}
+      DCTL_FROM: tfstate+tfcloud://${{ secrets.TF_API_ORG }}/${{ secrets.TF_API_WORKSPACE_ID }} --tfc-token ${{ secrets.TF_API_TOKEN }}
+      DCTL_TO: github+tf
+
+    steps:
+      - name: Run driftctl
+        uses: snyk/driftctl-action@v1
+        with:
+          version: 0.28.0
