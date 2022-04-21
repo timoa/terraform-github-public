@@ -1,3 +1,10 @@
+## [0.3.1](https://github.com/timoa/terraform-github-public/compare/v0.3.0...v0.3.1) (2022-04-21)
+
+
+### Bug Fixes
+
+* **driftctl:** setup Terraform Cloud before running Driftctl ([bc70a86](https://github.com/timoa/terraform-github-public/commit/bc70a86eab93f7329739870f693ae8a6bbf05f0c))
+
 # [0.3.0](https://github.com/timoa/terraform-github-public/compare/v0.2.1...v0.3.0) (2022-04-20)
 
 
