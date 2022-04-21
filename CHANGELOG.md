@@ -1,3 +1,11 @@
+## [0.3.2](https://github.com/timoa/terraform-github-public/compare/v0.3.1...v0.3.2) (2022-04-21)
+
+
+### Bug Fixes
+
+* **cicd:** fix missing checkout + add args for Terraform Cloud ([6460aee](https://github.com/timoa/terraform-github-public/commit/6460aeecf987aab16759cc5615c06bea17754b2e))
+* **cicd:** fix the Driftctl from args ([916316f](https://github.com/timoa/terraform-github-public/commit/916316f074bccdd5f424999d6acd4202362c8886))
+
 ## [0.3.1](https://github.com/timoa/terraform-github-public/compare/v0.3.0...v0.3.1) (2022-04-21)
 
 
