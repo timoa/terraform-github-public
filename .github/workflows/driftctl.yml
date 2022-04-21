@@ -10,10 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.DCTL_GITHUB_TOKEN }}
-      DCTL_FROM: tfstate+tfcloud://${{ secrets.TF_API_ORG }}/${{ secrets.TF_API_WORKSPACE_ID }} --tfc-token ${{ secrets.TF_API_TOKEN }}
+      DCTL_FROM: tfstate+tfcloud://${{ secrets.TF_API_ORG }}/${{ secrets.TF_API_WORKSPACE_ID }}
       DCTL_TO: github+tf
 
     steps:
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@ed3a0531877aca392eb870f440d9ae7aba83a6bd # tag=v1.4.0
+        with:
+          cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+
       - name: Run driftctl
         uses: snyk/driftctl-action@v1
         with:
