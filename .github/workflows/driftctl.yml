@@ -8,10 +8,6 @@ on:
 jobs:
   scheduled:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.DCTL_GITHUB_TOKEN }}
-      DCTL_FROM: tfstate+tfcloud://${{ secrets.TF_API_WORKSPACE_ID }}
-      DCTL_TO: github+tf
 
     steps:
       - name: Checkout
@@ -19,5 +15,8 @@ jobs:
 
       - name: Run driftctl
         uses: snyk/driftctl-action@v1
-        with:
-          args: --tfc-token ${{ secrets.TF_API_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.DCTL_GITHUB_TOKEN }}
+          DCTL_FROM: tfstate+tfcloud://${{ secrets.TF_API_WORKSPACE_ID }}
+          DCTL_TO: github+tf
+          INPUT_ARGS: --tfc-token ${{ secrets.TF_API_TOKEN }}
