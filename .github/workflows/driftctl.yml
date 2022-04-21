@@ -1,4 +1,4 @@
-name: driftctl
+name: Driftctl
 
 on:
   # Triggers driftctl every 10 minutes
