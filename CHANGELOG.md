@@ -1,3 +1,10 @@
+## [0.3.5](https://github.com/timoa/terraform-github-public/compare/v0.3.4...v0.3.5) (2022-04-21)
+
+
+### Bug Fixes
+
+* **cicd:** remove the scheduled Driftctl job ([eb6ca53](https://github.com/timoa/terraform-github-public/commit/eb6ca53b46dc24d06eab704caaddd9602496d020))
+
 ## [0.3.4](https://github.com/timoa/terraform-github-public/compare/v0.3.3...v0.3.4) (2022-04-21)
 
 
