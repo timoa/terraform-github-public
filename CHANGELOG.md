@@ -1,3 +1,10 @@
+# [0.4.0](https://github.com/timoa/terraform-github-public/compare/v0.3.5...v0.4.0) (2022-04-22)
+
+
+### Features
+
+* **oci:** add the Oracle Cloud Infrastructure Terraform Module example ([ca46f93](https://github.com/timoa/terraform-github-public/commit/ca46f93d0ee4661712e32e3ce6a1aa5ad6edc2fa))
+
 ## [0.3.5](https://github.com/timoa/terraform-github-public/compare/v0.3.4...v0.3.5) (2022-04-21)
 
 
