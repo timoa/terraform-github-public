@@ -19,12 +19,12 @@ module "terraform_module_example" {
   ]
 }
 
-# Terraform Module AWS Example
-module "terraform_module_aws_example" {
+# Terraform AWS Module Example
+module "terraform_aws_module_example" {
   source  = "mineiros-io/repository/github"
   version = "0.16.0"
 
-  name                 = "terraform-module-aws-example"
+  name                 = "terraform-aws-module-example"
   description          = "A Terraform module uses as an example to start new AWS Terraform module. It includes all the automation (versioning, providers update, lint, security) and best practices from HashiCorp"
   default_branch       = "main"
   gitignore_template   = "Terraform"
@@ -41,12 +41,12 @@ module "terraform_module_aws_example" {
   ]
 }
 
-# Terraform Module GCP Example
-module "terraform_module_gcp_example" {
+# Terraform GCP Module Example
+module "terraform_gcp_module_example" {
   source  = "mineiros-io/repository/github"
   version = "0.16.0"
 
-  name                 = "terraform-module-gcp-example"
+  name                 = "terraform-gcp-module-example"
   description          = "A Terraform module uses as an example to start new Google Cloud Platform Terraform module. It includes all the automation (versioning, providers update, lint, security) and best practices from HashiCorp"
   default_branch       = "main"
   gitignore_template   = "Terraform"
