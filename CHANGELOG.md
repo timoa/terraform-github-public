@@ -1,3 +1,10 @@
+# [0.5.0](https://github.com/timoa/terraform-github-public/compare/v0.4.0...v0.5.0) (2022-04-25)
+
+
+### Features
+
+* **fitbit:** add the first Fitbit app repository ([f459e9e](https://github.com/timoa/terraform-github-public/commit/f459e9e3144d2346e7705a534c22abcb08575bd2))
+
 # [0.4.0](https://github.com/timoa/terraform-github-public/compare/v0.3.5...v0.4.0) (2022-04-22)
 
 
