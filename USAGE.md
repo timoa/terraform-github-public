@@ -10,21 +10,21 @@
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_terraform_github_public"></a> [terraform\_github\_public](#module\_terraform\_github\_public) | mineiros-io/repository/github | 0.16.0 |
+| <a name="module_terraform_github_public"></a> [terraform\_github\_public](#module\_terraform\_github\_public) | ./modules/repository | n/a |
 | <a name="module_cdkit_appstore_design"></a> [cdkit\_appstore\_design](#module\_cdkit\_appstore\_design) | mineiros-io/repository/github | 0.16.0 |
 | <a name="module_fitbit_off_peak_hours"></a> [fitbit\_off\_peak\_hours](#module\_fitbit\_off\_peak\_hours) | mineiros-io/repository/github | 0.16.0 |
 | <a name="module_app_stores_prometheus_exporter"></a> [app\_stores\_prometheus\_exporter](#module\_app\_stores\_prometheus\_exporter) | mineiros-io/repository/github | 0.16.0 |
 | <a name="module_terraform_module_example"></a> [terraform\_module\_example](#module\_terraform\_module\_example) | mineiros-io/repository/github | 0.16.0 |
+| <a name="module_nodejs_encryption_api_example"></a> [nodejs\_encryption\_api\_example](#module\_nodejs\_encryption\_api\_example) | mineiros-io/repository/github | 0.16.0 |
 | <a name="module_cdkit_ansible"></a> [cdkit\_ansible](#module\_cdkit\_ansible) | mineiros-io/repository/github | 0.16.0 |
 | <a name="module_terraform_aws_module_example"></a> [terraform\_aws\_module\_example](#module\_terraform\_aws\_module\_example) | mineiros-io/repository/github | 0.16.0 |
-| <a name="module_chrome_tab_rotate_server"></a> [chrome\_tab\_rotate\_server](#module\_chrome\_tab\_rotate\_server) | mineiros-io/repository/github | 0.16.0 |
 | <a name="module_cdkit_ui_automation"></a> [cdkit\_ui\_automation](#module\_cdkit\_ui\_automation) | mineiros-io/repository/github | 0.16.0 |
-| <a name="module_nodejs_encryption_api_example"></a> [nodejs\_encryption\_api\_example](#module\_nodejs\_encryption\_api\_example) | mineiros-io/repository/github | 0.16.0 |
+| <a name="module_chrome_tab_rotate_server"></a> [chrome\_tab\_rotate\_server](#module\_chrome\_tab\_rotate\_server) | mineiros-io/repository/github | 0.16.0 |
+| <a name="module_terraform_gcp_module_example"></a> [terraform\_gcp\_module\_example](#module\_terraform\_gcp\_module\_example) | mineiros-io/repository/github | 0.16.0 |
+| <a name="module_terraform_module_oci_example"></a> [terraform\_module\_oci\_example](#module\_terraform\_module\_oci\_example) | mineiros-io/repository/github | 0.16.0 |
 | <a name="module_homelab"></a> [homelab](#module\_homelab) | mineiros-io/repository/github | 0.16.0 |
 | <a name="module_terraform_elasticsearch_single_node"></a> [terraform\_elasticsearch\_single\_node](#module\_terraform\_elasticsearch\_single\_node) | mineiros-io/repository/github | 0.16.0 |
-| <a name="module_terraform_gcp_module_example"></a> [terraform\_gcp\_module\_example](#module\_terraform\_gcp\_module\_example) | mineiros-io/repository/github | 0.16.0 |
 | <a name="module_terraform_jenkins_slaves_on_demand"></a> [terraform\_jenkins\_slaves\_on\_demand](#module\_terraform\_jenkins\_slaves\_on\_demand) | mineiros-io/repository/github | 0.16.0 |
-| <a name="module_terraform_module_oci_example"></a> [terraform\_module\_oci\_example](#module\_terraform\_module\_oci\_example) | mineiros-io/repository/github | 0.16.0 |
 
 ## Resources
 
