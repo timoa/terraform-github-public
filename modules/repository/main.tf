@@ -8,6 +8,7 @@ module "repository" {
   homepage_url         = var.homepage_url
   default_branch       = var.default_branch
   gitignore_template   = var.gitignore_template
+  license_template     = var.license_template
   defaults             = var.defaults
   vulnerability_alerts = true
   topics               = var.topics

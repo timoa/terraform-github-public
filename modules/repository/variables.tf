@@ -34,11 +34,16 @@ variable "gitignore_template" {
   default     = "terraform"
 }
 
+variable "license_template" {
+  description = "License used for this repository."
+  type        = string
+  default     = "mit"
+}
+
 variable "defaults" {
   description = "(Optional) Overwrite defaults for various repository settings"
   type        = any
   default = {
-    homepage_url           = "https://timoa.com"
     visibility             = "public"
     has_issues             = true
     has_projects           = false
@@ -50,10 +55,6 @@ variable "defaults" {
     allow_auto_merge       = false
     has_downloads          = false
     auto_init              = true
-    gitignore_template     = "terraform"
-    license_template       = "mit"
-    default_branch         = "main"
-    topics                 = ["terraform"]
   }
 }
 
