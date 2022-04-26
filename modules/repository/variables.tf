@@ -8,6 +8,12 @@ variable "description" {
   type        = string
 }
 
+variable "homepage_url" {
+  description = "Homepage URL of this repository."
+  type        = string
+  default     = "https://timoa.com"
+}
+
 variable "default_branch" {
   description = "Default branch of this repository."
   type        = string
