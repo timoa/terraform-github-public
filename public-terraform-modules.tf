@@ -50,7 +50,7 @@ module "terraform_gcp_module_example" {
 }
 
 # Terraform Module OCI Example
-module "terraform_module_oci_example" {
+module "terraform_oci_module_example" {
   source = "./modules/repository"
 
   name             = "terraform-module-oci-example"
