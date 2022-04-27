@@ -24,11 +24,16 @@ Current public repositories managed by this Terraform project:
 * [CDKit: UI Automation][cdkit.ui.automation]
 * [CDKit: Ansible][cdkit.ansible]
 
+## Fitbit
+
+* [Fitbit Off-peak Hours app][fitbit-off-peak-hours]
+
 ## Terraform
 
 * [Terraform Module Example][terraform-module-example]
-* [Terraform Module AWS Example][terraform-module-aws-example]
-* [Terraform Module GCP Example][terraform-module-gcp-example]
+* [Terraform Amazon Web Services Module Example][terraform-aws-module-example]
+* [Terraform Google Cloud Platform Module Example][terraform-gcp-module-example]
+* [Terraform Oracle Cloud Infrastructure Module Example][terraform-oci-module-example]
 * [HomeLab][homelab]
 * [Terraform Elasticsearch Single Node (outdated)][terraform-elasticsearch-single-node]
 * [Terraform Jenkins Slaves On-Demand (outdated)][terraform-jenkins-slaves-on-demand]
@@ -46,9 +51,11 @@ Current public repositories managed by this Terraform project:
 [cdkit.appstore.design]: https://github.com/timoa/cdkit.appstore.design
 [cdkit.ui.automation]: https://github.com/timoa/cdkit.ui.automation
 [cdkit.ansible]: https://github.com/timoa/cdkit.ansible
+[fitbit-off-peak-hours]: https://github.com/timoa/fitbit-off-peak-hours
 [homelab]: https://github.com/timoa/homelab
 [terraform-module-example]: https://github.com/timoa/terraform-module-example
-[terraform-module-aws-example]: https://github.com/timoa/terraform-module-aws-example
-[terraform-module-gcp-example]: https://github.com/timoa/terraform-module-gcp-example
+[terraform-aws-module-example]: https://github.com/timoa/terraform-aws-module-example
+[terraform-gcp-module-example]: https://github.com/timoa/terraform-gcp-module-example
+[terraform-oci-module-example]: https://github.com/timoa/terraform-oci-module-example
 [terraform-elasticsearch-single-node]: https://github.com/timoa/terraform-elasticsearch-single-node
 [terraform-jenkins-slaves-on-demand]: https://github.com/timoa/terraform-jenkins-slaves-on-demand
