@@ -1,3 +1,5 @@
+## [0.5.6](https://github.com/timoa/terraform-github-public/compare/v0.5.5...v0.5.6) (2022-04-27)
+
 ## [0.5.5](https://github.com/timoa/terraform-github-public/compare/v0.5.4...v0.5.5) (2022-04-26)
 
 ## [0.5.4](https://github.com/timoa/terraform-github-public/compare/v0.5.3...v0.5.4) (2022-04-26)
