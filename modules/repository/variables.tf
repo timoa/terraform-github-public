@@ -31,7 +31,7 @@ variable "topics" {
 variable "gitignore_template" {
   description = "(Optional) A list of branches to be created in this repository."
   type        = string
-  default     = "terraform"
+  default     = "Terraform"
 }
 
 variable "license_template" {
