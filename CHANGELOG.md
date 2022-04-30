@@ -1,3 +1,10 @@
+## [0.6.2](https://github.com/timoa/terraform-github-public/compare/v0.6.1...v0.6.2) (2022-04-30)
+
+
+### Bug Fixes
+
+* **nodejs:** fix Node gitignore template name ([088ee4c](https://github.com/timoa/terraform-github-public/commit/088ee4c52cb698ea2bab1f1c5f43c9d927dd5233))
+
 ## [0.6.1](https://github.com/timoa/terraform-github-public/compare/v0.6.0...v0.6.1) (2022-04-30)
 
 
