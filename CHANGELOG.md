@@ -1,3 +1,10 @@
+## [0.6.1](https://github.com/timoa/terraform-github-public/compare/v0.6.0...v0.6.1) (2022-04-30)
+
+
+### Bug Fixes
+
+* **repository:** fix case sensitive gitignore template name ([fecbb24](https://github.com/timoa/terraform-github-public/commit/fecbb240ad686e14f1aa7d02149f6ca61b23f9f2))
+
 # [0.6.0](https://github.com/timoa/terraform-github-public/compare/v0.5.7...v0.6.0) (2022-04-30)
 
 
