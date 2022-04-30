@@ -3,7 +3,7 @@ module "app_stores_prometheus_exporter" {
   source = "./modules/repository"
 
   name               = "app-stores-prometheus-exporter"
-  description        = "Prometheus exporter that exports metrics (score, ratings, reviews, app version, etc.) from Apple App Store and Google Play"
+  description        = "Prometheus exporter that exports metrics (score, ratings, reviews, app version, etc.) from the Apple App Store and Google Play Store"
   default_branch     = "develop"
   gitignore_template = "NodeJS"
   topics = [
@@ -56,6 +56,25 @@ module "nodejs_encryption_api_example" {
     "swagger",
     "postman",
     "fastify",
+    "managed-by-terraform"
+  ]
+}
+
+# App Stores DOMO Data Collection
+module "app_stores_domo_data_collection" {
+  source = "./modules/repository"
+
+  name               = "app-stores-domo-data-collection"
+  description        = "Continuously import App Stores metrics (score, ratings, reviews, app version, etc.) from the Apple App Store and Google Play Store to a DOMO Dataset"
+  default_branch     = "main"
+  gitignore_template = "NodeJS"
+  topics = [
+    "nodejs",
+    "docker",
+    "domo",
+    "domo-dataset",
+    "google-play-store",
+    "itunes-store",
     "managed-by-terraform"
   ]
 }
