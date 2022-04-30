@@ -53,7 +53,7 @@ module "terraform_gcp_module_example" {
 module "terraform_oci_module_example" {
   source = "./modules/repository"
 
-  name             = "terraform-module-oci-example"
+  name             = "terraform-oci-module-example"
   description      = "A Terraform module uses as an example to start new Oracle Cloud Infrastructure Terraform module. It includes all the automation (versioning, providers update, lint, security) and best practices from HashiCorp"
   license_template = "apache-2.0"
   topics = [
