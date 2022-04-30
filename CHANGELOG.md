@@ -1,3 +1,10 @@
+# [0.6.0](https://github.com/timoa/terraform-github-public/compare/v0.5.7...v0.6.0) (2022-04-30)
+
+
+### Features
+
+* **nodejs:** create the App Stores DOMO Data Collection repository ([94826fd](https://github.com/timoa/terraform-github-public/commit/94826fd804192848f9f8913f79bb427020261bcb))
+
 ## [0.5.7](https://github.com/timoa/terraform-github-public/compare/v0.5.6...v0.5.7) (2022-04-27)
 
 ## [0.5.6](https://github.com/timoa/terraform-github-public/compare/v0.5.5...v0.5.6) (2022-04-27)
