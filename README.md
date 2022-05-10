@@ -15,6 +15,8 @@ Current public repositories managed by this Terraform project:
 ## Node.js
 
 * [App Stores Prometheus Exporter][app-stores-prometheus-exporter]
+* [App Stores DOMO Data Collection][app-stores-domo-data-collection]
+* [App Stores Metrics (NPM module)][app-stores-metrics]
 * [Chrome Tab Rotate Server][chrome-tab-rotate-server]
 * [NodeJS Encryption API Example][nodejs-encryption-api-example]
 
@@ -46,6 +48,8 @@ Current public repositories managed by this Terraform project:
 [license-url]: https://raw.githubusercontent.com/timoa/app-stores-prometheus-exporter/master/LICENSE
 [terraform-github-public]: https://github.com/timoa/terraform-github-public
 [app-stores-prometheus-exporter]: https://github.com/timoa/app-stores-prometheus-exporter
+[app-stores-domo-data-collection]: https://github.com/timoa/app-stores-domo-data-collection
+[app-stores-metrics]: https://github.com/timoa/app-stores-metrics
 [chrome-tab-rotate-server]: https://github.com/timoa/chrome-tab-rotate-server
 [nodejs-encryption-api-example]: https://github.com/timoa/nodejs-encryption-api-example
 [cdkit.appstore.design]: https://github.com/timoa/cdkit.appstore.design
