@@ -61,10 +61,10 @@ module "nodejs_encryption_api_example" {
 }
 
 # App Stores DOMO Data Collection
-module "app_stores_domo_data_collection" {
+module "app_stores_domo_dataset" {
   source = "./modules/repository"
 
-  name               = "app-stores-domo-data-collection"
+  name               = "app-stores-domo-dataset"
   description        = "Continuously import App Stores metrics (score, ratings, reviews, app version, etc.) from the Apple App Store and Google Play Store to a DOMO Dataset"
   default_branch     = "main"
   gitignore_template = "Node"
@@ -73,6 +73,24 @@ module "app_stores_domo_data_collection" {
     "docker",
     "domo",
     "domo-dataset",
+    "google-play-store",
+    "itunes-store",
+    "managed-by-terraform"
+  ]
+}
+
+# App Stores Metrics
+module "app_stores_metrics" {
+  source = "./modules/repository"
+
+  name               = "app-stores-metrics"
+  description        = "NPM module that scrapes metrics from Apple App Store and Google Play Stores"
+  default_branch     = "develop"
+  gitignore_template = "Node"
+  topics = [
+    "nodejs",
+    "npm",
+    "npm-module",
     "google-play-store",
     "itunes-store",
     "managed-by-terraform"
