@@ -13,18 +13,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3
 
-      # Install latest Terraform manually as
-      #  Docker-based GitHub Actions are
-      #  slow due to lack of caching
-      # Note: Terraform is not needed for tflint
-      - name: Install Terraform
-        run: |
-          brew install terraform
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@ed3a0531877aca392eb870f440d9ae7aba83a6bd # tag=v1.4.0
+        with:
+          cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-      # Run init to get module code to be able to use `--module`
-      - name: Terraform init
-        run: |
-          terraform init
+      - name: Terraform Init
+        id: init
+        run: terraform init
 
       # Run TFLint
       - name: tflint with reviewdog output on the PR
