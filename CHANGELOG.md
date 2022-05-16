@@ -1,3 +1,10 @@
+# [0.8.0](https://github.com/timoa/terraform-github-public/compare/v0.7.0...v0.8.0) (2022-05-16)
+
+
+### Features
+
+* **repository:** add the Terraform OCI VS Code Server repository ([0694005](https://github.com/timoa/terraform-github-public/commit/06940057f77110861c1e52af6c03935525bf0729))
+
 # [0.7.0](https://github.com/timoa/terraform-github-public/compare/v0.6.4...v0.7.0) (2022-05-16)
 
 
