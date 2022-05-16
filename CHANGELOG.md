@@ -1,3 +1,10 @@
+## [0.6.4](https://github.com/timoa/terraform-github-public/compare/v0.6.3...v0.6.4) (2022-05-16)
+
+
+### Bug Fixes
+
+* **cicd:** use Terraform setup for Terraform Cloud ([ed5fa70](https://github.com/timoa/terraform-github-public/commit/ed5fa70948a33fcdf95b5010b28e97869de299ed))
+
 ## [0.6.3](https://github.com/timoa/terraform-github-public/compare/v0.6.2...v0.6.3) (2022-05-10)
 
 ## [0.6.2](https://github.com/timoa/terraform-github-public/compare/v0.6.1...v0.6.2) (2022-04-30)
