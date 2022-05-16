@@ -1,3 +1,10 @@
+# [0.7.0](https://github.com/timoa/terraform-github-public/compare/v0.6.4...v0.7.0) (2022-05-16)
+
+
+### Features
+
+* **repository:** add the app-stores-metrics repository ([26791f7](https://github.com/timoa/terraform-github-public/commit/26791f76c7fb988f2e5e26e6c8ee89cbfce18fc3))
+
 ## [0.6.4](https://github.com/timoa/terraform-github-public/compare/v0.6.3...v0.6.4) (2022-05-16)
 
 
