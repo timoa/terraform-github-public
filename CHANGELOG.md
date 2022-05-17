@@ -1,3 +1,10 @@
+## [0.8.1](https://github.com/timoa/terraform-github-public/compare/v0.8.0...v0.8.1) (2022-05-17)
+
+
+### Bug Fixes
+
+* **terraform-modules:** rename the GCP Terraform module to Google ([7afd800](https://github.com/timoa/terraform-github-public/commit/7afd80033ddc03282bf61ecf33fa89a5548f5078))
+
 # [0.8.0](https://github.com/timoa/terraform-github-public/compare/v0.7.0...v0.8.0) (2022-05-16)
 
 
