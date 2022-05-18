@@ -1,7 +1,7 @@
 
 module "repository" {
   source  = "mineiros-io/repository/github"
-  version = "0.16.1"
+  version = "0.16.2"
 
   name                 = var.name
   description          = var.description
