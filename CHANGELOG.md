@@ -1,3 +1,10 @@
+## [0.8.2](https://github.com/timoa/terraform-github-public/compare/v0.8.1...v0.8.2) (2022-05-29)
+
+
+### Bug Fixes
+
+* **terraform-projects:** update description and labels for the VSCode Server project ([5205202](https://github.com/timoa/terraform-github-public/commit/5205202e9581a4c214770f5b32f2aeade3f6ad80))
+
 ## [0.8.1](https://github.com/timoa/terraform-github-public/compare/v0.8.0...v0.8.1) (2022-05-17)
 
 
