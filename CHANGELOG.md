@@ -1,3 +1,10 @@
+## [0.8.3](https://github.com/timoa/terraform-github-public/compare/v0.8.2...v0.8.3) (2022-05-31)
+
+
+### Bug Fixes
+
+* **terraform-projects:** enable project for the Terraform VScode Server project ([dd9e182](https://github.com/timoa/terraform-github-public/commit/dd9e182190b1bfb85d8478b2b75294a6242366dc))
+
 ## [0.8.2](https://github.com/timoa/terraform-github-public/compare/v0.8.1...v0.8.2) (2022-05-29)
 
 
