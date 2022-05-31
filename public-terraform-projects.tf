@@ -21,6 +21,7 @@ module "terraform_oci_vscode_server" {
   description      = "Terraform project that deploys VSCode Server on Oracle Cloud Infrastructure (free tier) and protect the access with Cloudflare Zero Trust (optional) or an SSH tunnel"
   default_branch   = "develop"
   license_template = "apache-2.0"
+  has_projects     = true
   topics = [
     "terraform",
     "vscode",

@@ -58,6 +58,12 @@ variable "defaults" {
   }
 }
 
+variable "has_projects" {
+  description = "(Optional) Whether this repository has projects"
+  type        = bool
+  default     = false
+}
+
 variable "pages" {
   description = "(Optional) The repository's GitHub Pages configuration. (Default: {})"
   type        = any

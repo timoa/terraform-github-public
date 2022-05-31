@@ -10,6 +10,7 @@ module "repository" {
   gitignore_template   = var.gitignore_template
   license_template     = var.license_template
   defaults             = var.defaults
+  has_projects         = var.has_projects
   vulnerability_alerts = true
   topics               = var.topics
 }
