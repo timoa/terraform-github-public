@@ -32,6 +32,7 @@ Current public repositories managed by this Terraform project:
 
 ## Terraform
 
+* [Terraform OCI VS Code Server][terraform-oci-vscode-server]
 * [Terraform Module Example][terraform-module-example]
 * [Terraform Amazon Web Services Module Example][terraform-aws-module-example]
 * [Terraform Google Cloud Platform Module Example][terraform-gcp-module-example]
@@ -57,6 +58,7 @@ Current public repositories managed by this Terraform project:
 [cdkit.ansible]: https://github.com/timoa/cdkit.ansible
 [fitbit-off-peak-hours]: https://github.com/timoa/fitbit-off-peak-hours
 [homelab]: https://github.com/timoa/homelab
+[terraform-oci-vscode-server]: https://github.com/timoa/terraform-oci-vscode-server
 [terraform-module-example]: https://github.com/timoa/terraform-module-example
 [terraform-aws-module-example]: https://github.com/timoa/terraform-aws-module-example
 [terraform-gcp-module-example]: https://github.com/timoa/terraform-gcp-module-example
