@@ -1,3 +1,10 @@
+## [0.8.4](https://github.com/timoa/terraform-github-public/compare/v0.8.3...v0.8.4) (2022-06-21)
+
+
+### Bug Fixes
+
+* **cicd:** update the label name for the dependencies ([ac3e2c2](https://github.com/timoa/terraform-github-public/commit/ac3e2c2bbf485921738bb98657ce9cb23ecf45b7))
+
 ## [0.8.3](https://github.com/timoa/terraform-github-public/compare/v0.8.2...v0.8.3) (2022-05-31)
 
 
