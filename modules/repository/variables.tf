@@ -190,7 +190,7 @@ variable "maintain_teams" {
 variable "branch_protections_v3" {
   description = "(Optional) A list of branch protections to apply to the repository. Default is [] unless branch_protections is set."
   type        = any
-  default     = null
+  default     = []
 }
 
 variable "issue_labels_merge_with_github_labels" {
