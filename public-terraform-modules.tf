@@ -49,7 +49,7 @@ module "terraform_google_module_example" {
   ]
 }
 
-# Terraform Module OCI Example
+# Terraform OCI Module Example
 module "terraform_oci_module_example" {
   source = "./modules/repository"
 
