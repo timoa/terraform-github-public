@@ -187,14 +187,9 @@ variable "maintain_teams" {
   default     = []
 }
 
-variable "branch_protections" {
-  description = "DEPRECATED: use branch_protections_v3 instead. Default is []."
-  type        = any
-  default     = null
-}
-
 variable "branch_protections_v3" {
   description = "(Optional) A list of branch protections to apply to the repository. Default is [] unless branch_protections is set."
+  type        = any
   default     = null
 }
 
