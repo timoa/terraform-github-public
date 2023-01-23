@@ -1,3 +1,12 @@
+## [0.8.5](https://github.com/timoa/terraform-github-public/compare/v0.8.4...v0.8.5) (2023-01-23)
+
+
+### Bug Fixes
+
+* **module:** fix branch_protections_v3 default value ([db9efa1](https://github.com/timoa/terraform-github-public/commit/db9efa137d4902bd79cf45dc56e86dd34b0ecdf2))
+* **pre-commit:** update Checkov ([9fcf876](https://github.com/timoa/terraform-github-public/commit/9fcf876d3c73cb42f0cd6df36492fe97417b0af6))
+* **project:** update GitHub version + TFLint ([90f3fcd](https://github.com/timoa/terraform-github-public/commit/90f3fcd9cf421cfe7588c1a744ff4c60ba1c2b92))
+
 ## [0.8.4](https://github.com/timoa/terraform-github-public/compare/v0.8.3...v0.8.4) (2022-06-21)
 
 
