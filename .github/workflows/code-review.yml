@@ -16,7 +16,7 @@ jobs:
           egress-policy: audit
 
       - name: Checkout
-        uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3.3.0
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3.4.0
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@ed3a0531877aca392eb870f440d9ae7aba83a6bd # tag=v1.4.0
@@ -43,7 +43,7 @@ jobs:
           egress-policy: audit
 
       - name: Checkout
-        uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3.3.0
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3.4.0
 
       # Run TFSec
       - name: Run tfsec with reviewdog output on the PR
