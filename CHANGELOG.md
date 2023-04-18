@@ -1,3 +1,10 @@
+## [0.8.6](https://github.com/timoa/terraform-github-public/compare/v0.8.5...v0.8.6) (2023-04-18)
+
+
+### Bug Fixes
+
+* **cicd:** fix pipeline to use a different PAT for GitHub account management ([c4add41](https://github.com/timoa/terraform-github-public/commit/c4add417f788ece527b25004f369c0a72e4e7dbc))
+
 ## [0.8.5](https://github.com/timoa/terraform-github-public/compare/v0.8.4...v0.8.5) (2023-01-23)
 
 
