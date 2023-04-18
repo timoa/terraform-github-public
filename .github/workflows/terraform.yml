@@ -36,7 +36,7 @@ jobs:
         id: apply
         run: terraform plan
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_TOKEN }}  # use a different GITHUB_TOKEN to manage the GitHub Account
 
   # -- SAST SCAN --------------------------------------------------------------
   code-security:
