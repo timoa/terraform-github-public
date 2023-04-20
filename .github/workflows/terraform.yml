@@ -16,7 +16,7 @@ jobs:
           egress-policy: audit
 
       - name: Checkout
-        uses: actions/checkout@83b7061638ee4956cf7545a6f7efe594e5ad0247 # v3.5.1
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@ed3a0531877aca392eb870f440d9ae7aba83a6bd # tag=v1.4.0
@@ -53,7 +53,7 @@ jobs:
           egress-policy: audit
 
       - name: Checkout
-        uses: actions/checkout@83b7061638ee4956cf7545a6f7efe594e5ad0247 # v3.5.1
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
 
       - name: Perform Scan
         uses: ShiftLeftSecurity/scan-action@master
@@ -82,7 +82,7 @@ jobs:
           egress-policy: audit
 
       - name: Checkout
-        uses: actions/checkout@83b7061638ee4956cf7545a6f7efe594e5ad0247 # v3.5.1
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
         with:
           ref: 'main' # Force checkout of main branch to avoid caching from previous jobs
 
@@ -113,7 +113,7 @@ jobs:
           egress-policy: audit
 
       - name: Checkout
-        uses: actions/checkout@83b7061638ee4956cf7545a6f7efe594e5ad0247 # v3.5.1
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
         with:
           ref: 'main' # Force checkout of main branch to avoid caching from previous jobs
           persist-credentials: false
